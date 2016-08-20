@@ -3,7 +3,7 @@ from gothonweb import map
 
 urls = (
 "/game", "GameEngine",
-"/","Index",
+"/","Login",
 )
 
 app = web.application(urls, globals())
@@ -18,6 +18,11 @@ else:
 	session = web.config._session
 
 render = web.template.render("templates/", base = "layout")
+
+
+class Login(object):
+	def GET(self):
+		return render.login()
 
 class Index(object):
 	def GET(self):
