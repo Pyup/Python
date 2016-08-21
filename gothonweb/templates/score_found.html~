@@ -1,0 +1,4 @@
+$def with(username, score_num) 
+
+<h1>Higheest score:</h1>
+<p><a href="/">Highest score of $username is $score_num</a></p>

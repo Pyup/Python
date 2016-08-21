@@ -115,7 +115,7 @@ into jam jelly.
 )
 
 escape_pod.add_paths({
-'2': the_end_winner,
+'princess win venture': the_end_winner,
 '*': the_end_loser
 })
 
@@ -127,19 +127,19 @@ quips = [   "You died. You kinda suck at this.",
 generic_death = Room("death", quips[randint(0,len(quips) - 1)])
 
 the_bridge.add_paths({
-'throw the bomb': Room("death", quips[randint(0,len(quips) - 1)]),
-'slowly place the bomb': escape_pod
+'princess throw bomb': Room("death", quips[randint(0,len(quips) - 1)]),
+'princess place bomb': escape_pod
 })
 
 laser_weapon_armory.add_paths({
-'0132': the_bridge,
+'princess step bridge': the_bridge,
 '*': Room("death", quips[randint(0,len(quips) - 1)])
 })
 
 central_corridor.add_paths({
-'shoot!': Room("death", quips[randint(0,len(quips) - 1)]),
-'dodge!': Room("death", quips[randint(0,len(quips) - 1)]),
-'tell a joke': laser_weapon_armory
+'princess shoot': Room("death", quips[randint(0,len(quips) - 1)]),
+'princess dodge': Room("death", quips[randint(0,len(quips) - 1)]),
+'princess tell joke': laser_weapon_armory
 })
 
 START = central_corridor

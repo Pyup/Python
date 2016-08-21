@@ -1,0 +1,5 @@
+<h1>Please choose to lunch the game or check the highest score</h1>
+<h1>Higheest score:</h1>
+<p><a href="/score">Please click here</a></p>
+<h1>Lunch the game:</h1>
+<p><a href="/score">Please click here</a></p>

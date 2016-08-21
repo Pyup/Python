@@ -1,0 +1,4 @@
+$def with(username) 
+
+<h1>No score found</h1>
+<p><a href="/">No score found for $username. Go back to Login</a></p>
